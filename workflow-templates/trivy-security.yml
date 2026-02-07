@@ -1,0 +1,21 @@
+name: Trivy Security Scan
+
+on:
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  trivy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        scanners: 'vuln,secret'
+        severity: 'HIGH,CRITICAL'
+        exit-code: '1'

@@ -1,0 +1,9 @@
+{
+    "name": "Semgrep Security Audit",
+    "description": "Análisis estático de seguridad con Semgrep usando reglas de security-audit. Se ejecuta en cada Pull Request.",
+    "iconName": "shield",
+    "categories": [
+        "Security",
+        "CI"
+    ]
+}

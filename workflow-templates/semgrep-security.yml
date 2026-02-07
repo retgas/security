@@ -1,0 +1,17 @@
+name: Semgrep Security
+
+on:
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Semgrep
+      uses: returntocorp/semgrep-action@v1
+      with:
+        config: p/security-audit

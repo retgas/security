@@ -1,0 +1,9 @@
+{
+    "name": "Trivy Security Scan",
+    "description": "Escaneo de vulnerabilidades (HIGH/CRITICAL) y secretos con Trivy. Se ejecuta en cada Pull Request.",
+    "iconName": "shield-check",
+    "categories": [
+        "Security",
+        "CI"
+    ]
+}
