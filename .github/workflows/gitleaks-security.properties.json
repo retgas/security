@@ -1,0 +1,9 @@
+{
+    "name": "Gitleaks Secret Scan",
+    "description": "Escaneo avanzado de secretos (API Keys, Tokens, Credenciales) en el historial de git. Funciona para cualquier lenguaje.",
+    "iconName": "key",
+    "categories": [
+        "Security",
+        "CI"
+    ]
+}
